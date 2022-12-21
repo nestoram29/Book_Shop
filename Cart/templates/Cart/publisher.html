@@ -1,0 +1,20 @@
+<!-- 
+Extends layout.html and defines the 
+structure of the publisher page
+Last modified: 11/01
+ -->
+
+{% extends "Cart/layout.html" %}
+{% block content %}
+
+<div class="d-flex justify-content-center">
+    <div>
+        <h1><a href="https://www.google.com/search?q={{publisher.name}}" target="_blank">{{publisher.name}}</a></h1>
+        <h4>{{publisher.address}}</h4>
+        <h5>{{publisher.phone}}</h5>
+
+    </div>
+</div>
+
+
+{% endblock %}
